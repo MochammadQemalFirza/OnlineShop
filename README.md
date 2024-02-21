@@ -1,6 +1,6 @@
 # Online Shop Project
 
-A Golang RESTful API with Postgresql project for online shop
+A Golang RESTful API with Echo Framework and Postgresql database for project online shop
 
 # Table of Contents
 
