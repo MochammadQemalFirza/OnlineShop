@@ -67,3 +67,9 @@ go run server.go
 
 
 ## API Documentation
+* Customer can view product list by product category
+  - method : GET
+  - QueryParam : Key (Category) value (Makanan, Minuman, Pakaian)
+  - API Endpoint : http://localhost:8082/product
+  ![image](https://github.com/MochammadQemalFirza/OnlineShop/assets/90755886/3bdaa516-36d7-4fb6-897b-4eecc2f3993f)
+
