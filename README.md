@@ -16,8 +16,9 @@ A Golang RESTful API with Postgresql project for online shop
 ## Design 
 ### REST API Design
 ![Untitled Diagram drawio (2)](https://github.com/MochammadQemalFirza/OnlineShop/assets/90755886/26b3d058-96f4-4aa0-9425-a1f7f6423739)
+
 ## ERD Design
-![Untitled Diagram drawio (3)](https://github.com/MochammadQemalFirza/OnlineShop/assets/90755886/5de379cf-ef8e-4160-9092-aaa427439b00)
+![Untitled Diagram drawio (6)](https://github.com/MochammadQemalFirza/OnlineShop/assets/90755886/c4106053-597f-46c2-b683-cf5794a760cc)
 
 ## Features
 * Customer can view product list by product category
