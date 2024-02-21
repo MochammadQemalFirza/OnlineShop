@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
 	"os"
 
 	db "github.com/MochammadQemalFirza/OnlineShop/config"
+	"github.com/MochammadQemalFirza/OnlineShop/routes"
 	"github.com/joho/godotenv"
 
 	"github.com/labstack/echo/v4"
@@ -21,18 +21,15 @@ func main() {
 		log.Println(err.Error())
 		return
 	}
-
+	db := db.CreateCon()
 	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello World!")
-	})
-
-	db.CreateCon()
-
+	
 	port := os.Getenv("PORT")
 	if port == "" {
 		log.Fatal("port tidak ditemukan")
 	}
+
+    routes.InitRouter(e, db)
 
 	e.Logger.Fatal(e.Start(fmt.Sprintf(":%v", port)))
 }
